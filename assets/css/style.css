@@ -325,7 +325,7 @@ body {
 	background-color: var(--sub-color);
 	position: absolute;
 	bottom: 30px;
-	right: 115px;
+	right: 100px;
 }
 
 #contact_page {
@@ -401,13 +401,13 @@ body {
 	}
 
 	.copyright {
-    padding-top: 6px;
-    text-align: center;
+    	padding-top: 6px;
+    	text-align: center;
 	}
 
-	/*.ratings{
-		width: 90%;
-	}*/
+	#catalog_page .btn-primary {
+		right: 90px;
+	}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -416,17 +416,10 @@ body {
 		border-bottom-right-radius: 100px;
     	border-bottom-left-radius: 100px;
 	}
-
-	/*.ratings{
-		width: 90%;
-	}*/
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-	/*.ratings{
-		width: 90%;
-	}*/
 }
 
 /*Large devices (desktops, 992px and up)*/
