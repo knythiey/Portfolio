@@ -1,3 +1,14 @@
 $(document).ready(function(){
-	
+	$('.html').animate({width:'85%'},2000);
+	$('.css').animate({width:'75%'},2000);
+	$('.js').animate({width:'75%'},2000);
+	$('.jquery').animate({width:'70%'},2000);
+	$('.php').animate({width:'85%'},2000);
+	$('.mysql').animate({width:'85%'},2000);
+	$('.node').animate({width:'40%'},2000);
+	$('.mongo').animate({width:'40%'},2000);
+	$('.laravel').animate({width:'80%'},2000);
+	$('.express').animate({width:'40%'},2000);
+	$('.bootstrap').animate({width:'75%'},2000);
+	$('.git').animate({width:'75%'},2000);
 });//document.ready

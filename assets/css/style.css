@@ -12,8 +12,8 @@ body {
 :root {
 	--main-color: #045eef; /*blue*/
 	--sub-color: #efe704; /*yellow*/
+	--navbar-color: #343a40; /*dark grey*/
 }
-	;
 
 .main-wrapper {
 	letter-spacing: 1.5px;
@@ -81,7 +81,7 @@ body {
 
 .skills_list {
 	list-style: none;
-	padding: 10px;
+	padding: 10px 10px 30px 10px;
 }
 
 .skills_list li {
@@ -90,10 +90,190 @@ body {
 }
 
 .skill_name {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: var(--main-color);
 	margin-left: 20px;
+}
 
+/*for flipping*/
+#flip_container {
+	position: relative;
+	margin: 20px auto;
+	width: 280px;
+	height: 150px;
+	z-index: 1;
+	perspective: 1000;
+}
+
+#flip_card {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all .4s linear;
+	border-radius: 10px;
+}
+
+#flip_container:hover #flip_card {
+	transform: rotateY(180deg);
+  	box-shadow: -5px 5px 5px #aaa;
+}
+
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.face.back {
+	display: block;
+	transform: rotateY(180deg);
+	box-sizing: border-box;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	background-color: var(--navbar-color);
+}
+
+/*progress bar*/
+.progressBar {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background: #eeeeee;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px #222;
+}
+
+.prog_title {
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	padding-left: 10px;
+	float: left;
+	font-weight: bold;
+	color: #fff;
+	line-height: 2.5;
+	z-index: 10000;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-shadow: 2px 0 2px #333;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.progress_value {
+	position: relative;
+	float: right;
+	padding-right: 10px;
+	line-height: 2.5;
+	font-weight: bold;
+	color: #455a64;
+	z-index: 10000;
+}
+
+.progress {
+	height: 40px;
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: 2px 0 2px #555;
+}
+
+.htmlColor {
+	background-color: #b71c1c;
+}
+
+.cssColor {
+	background-color: #4a148c;
+}
+
+.jsColor {
+	background-color: #1a237e;
+}
+
+.jqueryColor {
+	background-color: #0ae0e0;
+}
+
+.phpColor {
+	background-color: #1b5e20;
+}
+
+.mysqlColor {
+	background-color: crimson;
+}
+
+.nodeColor {
+	background-color: yellow;
+}
+
+.mongoColor {
+	background-color: orange;
+}
+
+.laravelColor {
+	background-color: blue;
+}
+
+.expressColor {
+	background-color: green;
+}
+
+.bootstrapColor {
+	background-color: #ffca28;
+}
+
+.gitColor {
+	background-color: #085ea5;
+}
+
+.html {
+	background-color: #ec407a;
+}
+
+.css {
+	background-color: #ab47bc;
+}
+
+.js {
+	background-color: #5c6bc0;
+}
+
+.jquery {
+	background-color: #0ae0e0;
+}
+
+.php{
+	background-color: #66bb6a;
+}
+
+.mysql {
+	background-color: #e68d8d;
+}
+
+.node {
+	background-color: #b9b90c;
+}
+
+.mongo {
+	background-color: #ffc253;
+}
+
+.laravel {
+	background-color: #6a6aec;
+}
+
+.express {
+	background-color: #17b317;
+}
+
+.bootstrap {
+	background-color: #f5d77b;
+}
+
+.git {
+	background-color: #329cf3;
 }
 
 
@@ -128,7 +308,12 @@ body {
 }
 
 .card {
-	height: 550px;
+	height: 520px;
+}
+
+.card-text {
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 #catalog_page img:hover {
@@ -212,8 +397,17 @@ body {
 	}
 
 	.social-media > ul > li {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
+
+	.copyright {
+    padding-top: 6px;
+    text-align: center;
+	}
+
+	/*.ratings{
+		width: 90%;
+	}*/
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -222,10 +416,18 @@ body {
 		border-bottom-right-radius: 100px;
     	border-bottom-left-radius: 100px;
 	}
+
+	/*.ratings{
+		width: 90%;
+	}*/
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	/*.ratings{
+		width: 90%;
+	}*/
+}
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { ... }
