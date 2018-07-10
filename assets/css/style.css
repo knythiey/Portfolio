@@ -108,6 +108,17 @@ body {
 	letter-spacing: 1.5px;
 }
 
+#catalog_page h3 {
+	margin-top: 15px;
+}
+
+#catalog_page h3:hover {
+	color: white;
+	text-decoration: underline;
+	transform: scale(1.1);
+	transition: transform .2s;
+}
+
 #catalog_page a {
 	color: black;
 }
@@ -117,7 +128,12 @@ body {
 }
 
 .card {
-	height: 500px;
+	height: 550px;
+}
+
+#catalog_page img:hover {
+	transform: scale(1.01);
+	transition: transform .5s;
 }	
 
 #catalog_page .btn-primary {
@@ -134,7 +150,82 @@ body {
 
 
 /*footer*/
-footer {
-	text-align: center;
-	color: white;
+.home-footer {
+    background-color: rgb(43,45,49);
+    color: white;
 }
+
+.footer-wrapper {
+    height: auto;
+    color: white;
+}
+
+.copyright{
+    padding-top: 6px;
+}
+
+.social-media > ul > li {
+    list-style: none;
+    float:left;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    padding-top: 3px;
+}
+
+.social-media small {
+	margin-left: 15%;
+	font-size: 1.1rem;
+}
+
+.social-media > ul > li > a {
+    color:white;
+    text-decoration: none;
+}
+
+.social-media > ul > li:hover {
+    transform: scale(1.1);
+    transition: transform .4s ;
+}
+
+.fab:hover,
+.fas:hover {
+	color: crimson;
+}
+
+/*media queries*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.jumbotron {
+		border-bottom-right-radius: 100px;
+    	border-bottom-left-radius: 100px;
+	}
+
+	.social-media {
+		float:none !important;
+		margin: 0 25% 5px;
+	}
+	
+	.social-media small {
+		margin-left: 15%;
+		font-size: 1.1rem;
+	}
+
+	.social-media > ul > li {
+		font-size: 1.5rem;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.jumbotron {
+		border-bottom-right-radius: 100px;
+    	border-bottom-left-radius: 100px;
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
