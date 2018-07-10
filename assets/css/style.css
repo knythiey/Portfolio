@@ -1,0 +1,140 @@
+* {
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	padding-top: 70px;
+}
+
+:root {
+	--main-color: #045eef; /*blue*/
+	--sub-color: #efe704; /*yellow*/
+}
+	;
+
+.main-wrapper {
+	letter-spacing: 1.5px;
+}
+
+/*navbar*/
+.brand_logo {
+	height: 50px;
+	width: 50px;
+}
+
+.navbar ul >  li{
+	color: white;
+	padding: 5px;
+}
+
+/*home*/
+#home_page	 {
+	background-image: url('bg1.png');
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.jumbotron {
+	letter-spacing: 1.5px;
+	border-bottom-right-radius: 35%; 
+	border-bottom-left-radius: 35%; 
+}
+
+.jumbotron h1 {
+	text-align: center;
+}
+
+#user_img {
+	border-radius: 50%;
+	border: 2px dotted black;
+	height: 250px;
+	width:250px;
+}
+
+.home-left-container{
+	text-align: center;
+}
+
+/*skills*/
+#skills_page {
+	min-height: 100vh;
+	background-color: white;
+	text-align: center;
+}
+
+#skills_page h1 {
+	text-align: center;
+}
+
+#skills_page h3 {
+	font-size: 2rem;
+	font-weight: bolder;
+	text-decoration:underline;
+}
+.skills_img {
+	height: 110px;
+	width: 110px;
+}
+
+.skills_list {
+	list-style: none;
+	padding: 10px;
+}
+
+.skills_list li {
+	text-align: left;
+	border-bottom: 1px solid var(--sub-color);
+}
+
+.skill_name {
+	font-size: 1.7rem;
+	color: var(--main-color);
+	margin-left: 20px;
+
+}
+
+
+/*catalog page*/
+#catalog_page {
+	min-height: 100vh;
+	/*background-color: green;*/
+	text-align: center;
+}
+
+#catalog_page h1 {
+	letter-spacing: 1.5px;
+}
+
+#catalog_page a {
+	color: black;
+}
+
+.card-header {
+	background-color: var(--sub-color);
+}
+
+.card {
+	height: 500px;
+}	
+
+#catalog_page .btn-primary {
+	background-color: var(--sub-color);
+	position: absolute;
+	bottom: 30px;
+	right: 115px;
+}
+
+#contact_page {
+	min-height: 100vh;
+	background-color: red;
+}
+
+
+/*footer*/
+footer {
+	text-align: center;
+	color: white;
+}
